@@ -26,8 +26,10 @@ module.exports = class MenuController {
           break;
         case "Exit":
           this.exit();
+          break;
         case "Check date & time":
           this.getDate();
+          break;
         default:
           console.log("Invalid input");
           this.main();
@@ -49,9 +51,10 @@ module.exports = class MenuController {
   }
 
   getDate(){
-    let date = new Date();
     this.clear();
-    console.log(`${date}`);
+    let currentDate = new Date();
+    console.log(`The time is ${currentDate.toLocaleTimeString()}, on ${currentDate.toLocaleDateString()}`);
+    this.main();
   }
 
   exit(){
