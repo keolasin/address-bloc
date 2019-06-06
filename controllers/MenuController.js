@@ -10,6 +10,7 @@ module.exports = class MenuController {
         message: "Please choose from an option below: ",
         choices: [
           "Add new contact",
+            "View all contacts",
           "Exit"
         ]
       }
@@ -27,6 +28,9 @@ module.exports = class MenuController {
           break;
         case "Exit":
           this.exit();
+          break;
+        case "View all contacts":
+          this.getContacts();
           break;
         default:
           console.log("Invalid input");
@@ -52,6 +56,25 @@ module.exports = class MenuController {
         console.log(err);
         this.main();
       });
+    });
+  }
+
+  getContacts(){
+    this.clear();
+
+    this.book.getContacts().then((contacts) => {
+      for (let contact of contacts) {
+        console.log(`
+          name: ${contact.name}
+          phone number: ${contact.phone}
+          email: ${contact.email}
+          ============
+        `);
+      }
+      this.main();
+    }).catch((err) => {
+      console.log(err);
+      this.main();
     });
   }
 
