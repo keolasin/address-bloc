@@ -15,9 +15,11 @@ module.exports = class MenuController {
       }
     ]
 
+    // handles adding contact functionality
     this.book = new ContactController();
   }
 
+  //handles the main menu
   main(){
     console.log(`Welcome to AddressBloc!`);
     inquirer.prompt(this.mainMenuQuestions).then((response) => {
@@ -38,10 +40,12 @@ module.exports = class MenuController {
     })
   }
 
+  // clears console
   clear(){
     console.log("\x1Bc");
   }
 
+  // uses ContactController module
   addContact(){
     this.clear();
     inquirer.prompt(this.book.addContactQuestions).then((answers) => {
