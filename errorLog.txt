@@ -1,0 +1,86 @@
+Keolasin@Prime MINGW64 /m/keolasin/documents/bloc/address-bloc (listing-contac-and-searching)
+$ npm test
+
+> address-bloc@1.0.0 test M:\keolasin\documents\bloc\address-bloc
+> set NODE_ENV=test&& jasmine
+
+Thu, 06 Jun 2019 13:36:13 GMT sequelize deprecated String based operators are w deprecated. Please use Symbol based operators for better security, read moret http://docs.sequelizejs.com/manual/tutorial/querying.html#operators at node_dules\sequelize\lib\sequelize.js:237:13
+Randomized with seed 74996
+Started
+TypeError: options.logging.apply is not a function
+    at Sequelize.log (M:\keolasin\documents\bloc\address-bloc\node_modules\seqlize\lib\sequelize.js:1077:23)
+    at Query.run (M:\keolasin\documents\bloc\address-bloc\node_modules\sequeli\lib\dialects\postgres\query.js:74:22)
+    at retry (M:\keolasin\documents\bloc\address-bloc\node_modules\sequelize\l\sequelize.js:544:32)
+    at M:\keolasin\documents\bloc\address-bloc\node_modules\retry-as-promised\dex.js:39:21
+    at Promise._execute (M:\keolasin\documents\bloc\address-bloc\node_modules\uebird\js\release\debuggability.js:313:9)
+    at Promise._resolveFromExecutor (M:\keolasin\documents\bloc\address-bloc\ne_modules\bluebird\js\release\promise.js:488:18)
+    at new Promise (M:\keolasin\documents\bloc\address-bloc\node_modules\bluebd\js\release\promise.js:79:10)
+    at retryAsPromised (M:\keolasin\documents\bloc\address-bloc\node_modules\rry-as-promised\index.js:29:10)
+    at Promise.try.then.connection (M:\keolasin\documents\bloc\address-bloc\no_modules\sequelize\lib\sequelize.js:544:14)
+    at tryCatcher (M:\keolasin\documents\bloc\address-bloc\node_modules\bluebi\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (M:\keolasin\documents\bloc\address-bc\node_modules\bluebird\js\release\promise.js:517:31)
+    at Promise._settlePromise (M:\keolasin\documents\bloc\address-bloc\node_moles\bluebird\js\release\promise.js:574:18)
+    at Promise._settlePromise0 (M:\keolasin\documents\bloc\address-bloc\node_mules\bluebird\js\release\promise.js:619:10)
+    at Promise._settlePromises (M:\keolasin\documents\bloc\address-bloc\node_mules\bluebird\js\release\promise.js:699:18)
+    at _drainQueueStep (M:\keolasin\documents\bloc\address-bloc\node_modules\bebird\js\release\async.js:138:12)
+    at _drainQueue (M:\keolasin\documents\bloc\address-bloc\node_modules\bluebd\js\release\async.js:131:9)
+    at Async._drainQueues (M:\keolasin\documents\bloc\address-bloc\node_modulebluebird\js\release\async.js:147:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (M:\keolasin\documents\bl\address-bloc\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+.Unhandled rejection error: relation "Contacts" does not exist
+    at Connection.parseE (M:\keolasin\documents\bloc\address-bloc\node_modulesg\lib\connection.js:545:11)
+    at Connection.parseMessage (M:\keolasin\documents\bloc\address-bloc\node_mules\pg\lib\connection.js:370:19)
+    at Socket.<anonymous> (M:\keolasin\documents\bloc\address-bloc\node_modulepg\lib\connection.js:113:22)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    at Socket.Readable.push (_stream_readable.js:219:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+TypeError: options.logging.apply is not a function
+    at Sequelize.log (M:\keolasin\documents\bloc\address-bloc\node_modules\seqlize\lib\sequelize.js:1077:23)
+    at Query.run (M:\keolasin\documents\bloc\address-bloc\node_modules\sequeli\lib\dialects\postgres\query.js:74:22)
+    at retry (M:\keolasin\documents\bloc\address-bloc\node_modules\sequelize\l\sequelize.js:544:32)
+    at M:\keolasin\documents\bloc\address-bloc\node_modules\retry-as-promised\dex.js:39:21
+    at Promise._execute (M:\keolasin\documents\bloc\address-bloc\node_modules\uebird\js\release\debuggability.js:313:9)
+    at Promise._resolveFromExecutor (M:\keolasin\documents\bloc\address-bloc\ne_modules\bluebird\js\release\promise.js:488:18)
+    at new Promise (M:\keolasin\documents\bloc\address-bloc\node_modules\bluebd\js\release\promise.js:79:10)
+    at retryAsPromised (M:\keolasin\documents\bloc\address-bloc\node_modules\rry-as-promised\index.js:29:10)
+    at Promise.try.then.connection (M:\keolasin\documents\bloc\address-bloc\no_modules\sequelize\lib\sequelize.js:544:14)
+    at tryCatcher (M:\keolasin\documents\bloc\address-bloc\node_modules\bluebi\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (M:\keolasin\documents\bloc\address-bc\node_modules\bluebird\js\release\promise.js:517:31)
+    at Promise._settlePromise (M:\keolasin\documents\bloc\address-bloc\node_moles\bluebird\js\release\promise.js:574:18)
+    at Promise._settlePromise0 (M:\keolasin\documents\bloc\address-bloc\node_mules\bluebird\js\release\promise.js:619:10)
+    at Promise._settlePromises (M:\keolasin\documents\bloc\address-bloc\node_mules\bluebird\js\release\promise.js:699:18)
+    at _drainQueueStep (M:\keolasin\documents\bloc\address-bloc\node_modules\bebird\js\release\async.js:138:12)
+    at _drainQueue (M:\keolasin\documents\bloc\address-bloc\node_modules\bluebd\js\release\async.js:131:9)
+    at Async._drainQueues (M:\keolasin\documents\bloc\address-bloc\node_modulebluebird\js\release\async.js:147:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (M:\keolasin\documents\bl\address-bloc\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+.Unhandled rejection error: relation "Contacts" does not exist
+    at Connection.parseE (M:\keolasin\documents\bloc\address-bloc\node_modulesg\lib\connection.js:545:11)
+    at Connection.parseMessage (M:\keolasin\documents\bloc\address-bloc\node_mules\pg\lib\connection.js:370:19)
+    at Socket.<anonymous> (M:\keolasin\documents\bloc\address-bloc\node_modulepg\lib\connection.js:113:22)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    at Socket.Readable.push (_stream_readable.js:219:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+.Unhandled rejection error: relation "Contacts" does not exist
+    at Connection.parseE (M:\keolasin\documents\bloc\address-bloc\node_modulesg\lib\connection.js:545:11)
+    at Connection.parseMessage (M:\keolasin\documents\bloc\address-bloc\node_mules\pg\lib\connection.js:370:19)
+    at Socket.<anonymous> (M:\keolasin\documents\bloc\address-bloc\node_modulepg\lib\connection.js:113:22)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    at Socket.Readable.push (_stream_readable.js:219:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+.
+
+
+4 specs, 0 failures
+Finished in 0.188 seconds
+Randomized with seed 74996 (jasmine --random=true --seed=74996)
