@@ -48,4 +48,33 @@ module.exports = class ContactController {
     }
     return null;
   }
+
+  binarySearch(contacts, target){
+    let min = 0;
+    let max = contacts.length - 1;
+    let mid;
+
+    while(min <= max){
+      // find new mid and assign
+      mid = Math.floor((min + max) / 2);
+      let currentContact = contacts[mid];
+
+      if(currentContact.name > target){ // target is in the lower half, set upper bound to old mid
+        max = mid - 1;
+      } else if(currentContact.name < target){ // target is in the upper half, set lower bound to old mid
+        min = mid + 1;
+      } else { // target found at mid, returned
+        return contacts[mid];
+      }
+    }
+
+    return null; // element not found
+  }
+
+  search(name){
+    return Contact.findOne({
+      where: {name}
+    })
+  }
+
 }
